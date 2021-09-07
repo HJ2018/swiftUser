@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sFt-KV-H6w" customClass="HeadView" customModule="DOOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-cL-r9x">
+                    <rect key="frame" x="0.0" y="0.0" width="366" height="225"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-1U-MVY" customClass="AnimatableImageView" customModule="IBAnimatable">
+                    <rect key="frame" x="15" y="195" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="cBR-H9-eN8"/>
+                        <constraint firstAttribute="height" constant="70" id="tQH-RE-efc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGq-0F-biC">
+                    <rect key="frame" x="95" y="201" width="18" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqt-Uz-DOr">
+                    <rect key="frame" x="15" y="15" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="LXJ-vr-sQ2"/>
+                        <constraint firstAttribute="height" constant="38" id="z6a-Ec-E80"/>
+                    </constraints>
+                    <state key="normal" image="chatroom_back_selected"/>
+                    <connections>
+                        <action selector="backclick:" destination="sFt-KV-H6w" eventType="touchUpInside" id="Yb0-HO-iIM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="YVJ-cL-r9x" firstAttribute="top" secondItem="LAZ-B8-MBs" secondAttribute="top" id="05c-9z-xtV"/>
+                <constraint firstItem="LAZ-B8-MBs" firstAttribute="bottom" secondItem="YVJ-cL-r9x" secondAttribute="bottom" id="079-Xg-WXG"/>
+                <constraint firstItem="LAZ-B8-MBs" firstAttribute="bottom" secondItem="JGq-0F-biC" secondAttribute="bottom" id="8EW-py-DFp"/>
+                <constraint firstItem="Zqt-Uz-DOr" firstAttribute="top" secondItem="LAZ-B8-MBs" secondAttribute="top" constant="15" id="DDd-bN-pFx"/>
+                <constraint firstItem="Zqt-Uz-DOr" firstAttribute="leading" secondItem="LAZ-B8-MBs" secondAttribute="leading" constant="15" id="FH3-hf-Aja"/>
+                <constraint firstItem="YVJ-cL-r9x" firstAttribute="leading" secondItem="LAZ-B8-MBs" secondAttribute="leading" id="Ngn-Kz-XT1"/>
+                <constraint firstItem="JGq-0F-biC" firstAttribute="leading" secondItem="Rh8-1U-MVY" secondAttribute="trailing" constant="10" id="Pq9-hx-6JL"/>
+                <constraint firstItem="LAZ-B8-MBs" firstAttribute="bottom" secondItem="Rh8-1U-MVY" secondAttribute="bottom" constant="-40" id="moi-fV-92r"/>
+                <constraint firstItem="LAZ-B8-MBs" firstAttribute="trailing" secondItem="YVJ-cL-r9x" secondAttribute="trailing" id="v4W-LJ-y6n"/>
+                <constraint firstItem="Rh8-1U-MVY" firstAttribute="leading" secondItem="LAZ-B8-MBs" secondAttribute="leading" constant="15" id="xI1-Ts-HKX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LAZ-B8-MBs"/>
+            <connections>
+                <outlet property="BgImageView" destination="YVJ-cL-r9x" id="7WH-B5-sAo"/>
+                <outlet property="HeadImageView" destination="Rh8-1U-MVY" id="vRt-gl-B92"/>
+                <outlet property="NamelLabel" destination="JGq-0F-biC" id="7in-Sc-fO4"/>
+                <outlet property="TopImage" destination="05c-9z-xtV" id="vqz-4x-qrc"/>
+            </connections>
+            <point key="canvasLocation" x="172.80000000000001" y="181.25937031484258"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chatroom_back_selected" width="30" height="30"/>
+    </resources>
+</document>

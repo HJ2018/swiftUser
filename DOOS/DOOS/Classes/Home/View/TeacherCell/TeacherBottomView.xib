@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZiZ-5r-fvl" customClass="TeacherBottomView" customModule="DOOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEr-74-tpQ">
+                    <rect key="frame" x="15" y="0.0" width="59" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UEr-74-tpQ" secondAttribute="height" multiplier="1:1" id="DfV-w3-wEo"/>
+                    </constraints>
+                    <state key="normal" title="收藏">
+                        <color key="titleColor" white="0.19697131849999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj5-S4-Xpk">
+                    <rect key="frame" x="248" y="0.0" width="180" height="59"/>
+                    <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="5G7-X2-pGk"/>
+                    </constraints>
+                    <state key="normal" title="立即预约"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVv-8K-8Xa">
+                    <rect key="frame" x="84" y="4" width="0.5" height="51"/>
+                    <color key="backgroundColor" red="0.80679805449999997" green="0.80963390440000005" blue="0.81814145390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="ziV-Cg-lqg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="pXZ-9Q-vq8" firstAttribute="bottom" secondItem="UEr-74-tpQ" secondAttribute="bottom" id="Avx-Ny-PN6"/>
+                <constraint firstItem="pXZ-9Q-vq8" firstAttribute="bottom" secondItem="Dj5-S4-Xpk" secondAttribute="bottom" id="DEW-rA-OEz"/>
+                <constraint firstItem="pXZ-9Q-vq8" firstAttribute="bottom" secondItem="aVv-8K-8Xa" secondAttribute="bottom" constant="4" id="NQ9-F9-Ojr"/>
+                <constraint firstItem="aVv-8K-8Xa" firstAttribute="leading" secondItem="UEr-74-tpQ" secondAttribute="trailing" constant="10" id="QTV-Kk-Qwa"/>
+                <constraint firstItem="aVv-8K-8Xa" firstAttribute="top" secondItem="pXZ-9Q-vq8" secondAttribute="top" constant="4" id="aCh-V6-6Cz"/>
+                <constraint firstItem="UEr-74-tpQ" firstAttribute="centerY" secondItem="Dj5-S4-Xpk" secondAttribute="centerY" id="dsb-6x-fZr"/>
+                <constraint firstItem="UEr-74-tpQ" firstAttribute="top" secondItem="pXZ-9Q-vq8" secondAttribute="top" id="k4R-Ag-1RG"/>
+                <constraint firstItem="Dj5-S4-Xpk" firstAttribute="top" secondItem="pXZ-9Q-vq8" secondAttribute="top" id="r1t-9C-HOv"/>
+                <constraint firstItem="UEr-74-tpQ" firstAttribute="leading" secondItem="pXZ-9Q-vq8" secondAttribute="leading" constant="15" id="uFa-RS-79H"/>
+                <constraint firstItem="pXZ-9Q-vq8" firstAttribute="trailing" secondItem="Dj5-S4-Xpk" secondAttribute="trailing" id="vnD-1G-l3j"/>
+                <constraint firstItem="UEr-74-tpQ" firstAttribute="height" secondItem="ZiZ-5r-fvl" secondAttribute="height" id="z98-et-BBB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="pXZ-9Q-vq8"/>
+            <point key="canvasLocation" x="86.400000000000006" y="230.73463268365819"/>
+        </view>
+    </objects>
+</document>

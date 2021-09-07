@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AhK-4O-5bE" customClass="NavBarView" customModule="DOOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNe-AI-15K">
+                    <rect key="frame" x="10" y="5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="IH0-33-ybU"/>
+                        <constraint firstAttribute="width" constant="35" id="Puv-5e-VaM"/>
+                    </constraints>
+                    <state key="normal" image="navigationButtonReturn"/>
+                    <connections>
+                        <action selector="BackClick:" destination="AhK-4O-5bE" eventType="touchUpInside" id="JBK-ci-XG0"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image4" translatesAutoresizingMaskIntoConstraints="NO" id="OWx-rv-gOr">
+                    <rect key="frame" x="156" y="24" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0E4-7x-Qg3"/>
+                        <constraint firstAttribute="width" constant="40" id="GAZ-AH-V7h"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="FNe-AI-15K" firstAttribute="leading" secondItem="sWZ-my-9pC" secondAttribute="leading" constant="10" id="7Bm-uW-ME3"/>
+                <constraint firstItem="OWx-rv-gOr" firstAttribute="centerY" secondItem="sWZ-my-9pC" secondAttribute="centerY" id="MIc-pf-tOf"/>
+                <constraint firstItem="FNe-AI-15K" firstAttribute="top" secondItem="sWZ-my-9pC" secondAttribute="top" constant="5" id="pFi-df-jfM"/>
+                <constraint firstItem="OWx-rv-gOr" firstAttribute="centerX" secondItem="sWZ-my-9pC" secondAttribute="centerX" id="rGQ-t1-61t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sWZ-my-9pC"/>
+            <connections>
+                <outlet property="HeadImaegView" destination="OWx-rv-gOr" id="zc2-sl-CaS"/>
+                <outlet property="backBtn" destination="FNe-AI-15K" id="RbJ-nB-Wub"/>
+                <outlet property="backBtnTop" destination="pFi-df-jfM" id="BIJ-ov-8zo"/>
+                <outlet property="iamgeH" destination="0E4-7x-Qg3" id="7BA-3o-jgf"/>
+                <outlet property="imageW" destination="GAZ-AH-V7h" id="CzW-BX-ykv"/>
+            </connections>
+            <point key="canvasLocation" x="-3.2000000000000002" y="40.479760119940032"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image4" width="800" height="1200"/>
+        <image name="navigationButtonReturn" width="15" height="21"/>
+    </resources>
+</document>

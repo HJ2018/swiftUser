@@ -1,0 +1,6 @@
+module Pods_DOOS {
+  umbrella header "Pods-DOOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
